@@ -1,3 +1,35 @@
-<!DOCTYPE html>
-<h1>hello</h1>
-</html>
+Getting Started & Setup
+git init - Initializes a new local Git repository.
+git clone <url> - Downloads a project from a remote repository, including its history and branches.
+git config --global user.name "[name]" - Sets your name for commit transactions globally.
+git config --global user.email "[email address]" - Sets your email for commit transactions globally. 
+Daily Work & Staging
+git status - Shows the status of your working directory.
+git add <file> - Stages a specific file for the next commit.
+git add . - Stages all changes in the current directory.
+git diff - Shows unstaged changes in the working directo
+git diff --staged - Shows changes between the staging area and the last commit.
+git commit -m "[message]" - Records staged file snapshots with a message.
+git commit -am "[message]" - Stages modified/deleted files and commits them (for tracked files). 
+Branching & Merging
+git branch - Lists local branches.
+git branch <branch-name> - Creates a new branch.
+git checkout <branch-name> - Switches to a specified branch.
+Note: git switch is a newer alternative for switching branches.s
+git checkout -b <branch-name> - Creates and switches to a new branch.
+git merge <branch> - Merges the specified branch into the current one.
+git branch -d <branch-name> - Deletes a local branch (if merged).
+git branch -D <branch-name> - Forces deletion of a local branch. 
+Remote Repositories & Synchronization
+git remote add <name> <url> - Adds a connection to a new remote repository.
+git fetch <remote> - Downloads changes from the remote without merging.
+git pull - Fetches and merges changes from the remote.
+git push <remote> <branch> - Uploads local commits to the remote.
+git push -u <remote> <branch> - Pushes a new branch and sets it for tracking. 
+Inspection & Undoing Changes
+git log - Shows the commit history.
+git log --oneline --graph - Displays a condensed, graphical history view.
+git revert <commit> - Creates a commit to undo changes from a specific commit.
+git reset --hard - Discards changes and reverts to the last commit. Use with caution.
+git stash - Temporarily saves changes in your working directory.
+git stash pop - Applies stashed changes and removes them from the stash list. 
