@@ -1,1 +1,2 @@
 # PushToGit
+CMDS to USE GIT AND GITHUB
